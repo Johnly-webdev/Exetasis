@@ -9,13 +9,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const PORT = process.env.PORT || 5173
-;
+const PORT = 5000;
 
 app.get("/api/health", (req,res) =>{
     res.status(200).json({
         success: true,
-        message: "Server is running!"
+        message: "Exetasis Server is running!"
     });
 });
 
